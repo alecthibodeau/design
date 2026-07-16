@@ -23,7 +23,7 @@ function GraphicDesign(): JSX.Element {
     <div className="graphic-design">
       <h1>Graphic Design</h1>
       <h2>
-        <a href="https://alect.me">Alec Thibodeau</a>
+        <a href="https://www.linkedin.com/in/alecthibodeau">Alec Thibodeau</a>
       </h2>
       <div className="graphic-design-images">
         {constants.graphicDesignEntries.map(renderImage)}
