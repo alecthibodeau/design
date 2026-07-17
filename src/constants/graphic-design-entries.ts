@@ -1,16 +1,16 @@
 /* Images */
-import image01 from './assets/images/01-shaking-hands.jpg';
-import image02 from './assets/images/02-van-flowers.jpg';
-import image03 from './assets/images/03-metal-effect.jpg';
-import image04 from './assets/images/04-burnside-music.jpg';
-import image05 from './assets/images/05-lp-smart-flesh.jpg';
-import image06 from './assets/images/06-lp-sp866.jpg';
-import image07 from './assets/images/07-lp-sp735.jpg';
-import image08 from './assets/images/08-cd-sp866.jpg';
-import image09 from './assets/images/09-cd-sp735.jpg';
+import imageShakingHands from '../assets/images/shaking-hands.jpg';
+import imageVanFlowers from '../assets/images/van-flowers.jpg';
+import imageMetalEffect from '../assets/images/metal-effect.jpg';
+import imageBurnsideMusic from '../assets/images/burnside-music.jpg';
+import imageSmartFlesh from '../assets/images/lp-smart-flesh.jpg';
+import imageLpSp866 from '../assets/images/lp-sp866.jpg';
+import imageLpSp735 from '../assets/images/lp-sp735.jpg';
+import imageCdSp866 from '../assets/images/cd-sp866.jpg';
+import imageCdSp735 from '../assets/images/cd-sp735.jpg';
 
 /* Interfaces */
-import GraphicDesignEntry from './interfaces/GraphicDesignEntry';
+import GraphicDesignEntry from '../interfaces/GraphicDesignEntry';
 
 const textImageEditing: string = 'Image editing for creative agency';
 const textPhotoshop: string = 'Adobe Photoshop';
@@ -18,56 +18,64 @@ const textVinylAlbumPackaging: string = 'Vinyl album packaging for record label'
 const textAdobePhotoshopIllustratorIndesign: string = 'Adobe Photoshop, Illustrator and InDesign';
 const textCompactDiscPackaging: string = 'Compact disc packaging for record label';
 
-const graphicDesignEntries: GraphicDesignEntry[] = [
+const entriesPhotoshopping: GraphicDesignEntry[] = [
   {
-    image: image01,
+    image: imageShakingHands,
     captionOne: textImageEditing,
     captionTwo: textPhotoshop
   },
   {
-    image: image02,
+    image: imageVanFlowers,
     captionOne: textImageEditing,
     captionTwo: textPhotoshop
   },
   {
-    image: image03,
+    image: imageMetalEffect,
     captionOne: textImageEditing,
     captionTwo: textPhotoshop
-  },
+  }
+];
+
+const entriesBranding: GraphicDesignEntry[] = [
   {
-    image: image04,
+    image: imageBurnsideMusic,
     captionOne: 'Branding for municipal park',
     captionTwo: 'Adobe Photoshop and Illustrator'
-  },
+  }
+];
+
+const entriesPackaging: GraphicDesignEntry[] = [
   {
-    image: image05,
+    image: imageSmartFlesh,
     captionOne: textVinylAlbumPackaging,
     captionTwo: textAdobePhotoshopIllustratorIndesign
   },
   {
-    image: image06,
+    image: imageLpSp866,
     captionOne: textVinylAlbumPackaging,
     captionTwo: textAdobePhotoshopIllustratorIndesign
   },
   {
-    image: image07,
+    image: imageLpSp735,
     captionOne: textVinylAlbumPackaging,
     captionTwo: textAdobePhotoshopIllustratorIndesign
   },
   {
-    image: image08,
+    image: imageCdSp866,
     captionOne: textCompactDiscPackaging,
     captionTwo: 'Adobe Illustrator and InDesign'
   },
   {
-    image: image09,
+    image: imageCdSp735,
     captionOne: textCompactDiscPackaging,
     captionTwo: 'Adobe Photoshop and InDesign'
   }
 ];
 
-const constants = {
-  graphicDesignEntries
-}
+const graphicDesignEntries = {
+  entriesBranding,
+  entriesPackaging,
+  entriesPhotoshopping
+};
 
-export default constants;
+export default graphicDesignEntries;
