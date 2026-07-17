@@ -4,6 +4,9 @@ import graphicDesignEntries from '../constants/graphic-design-entries';
 /* Interfaces */
 import GraphicDesignEntry from '../interfaces/GraphicDesignEntry';
 
+/* Styles */
+import '../styles/graphic-design.css';
+
 function GraphicDesign(): JSX.Element {
   function renderImage(entry: GraphicDesignEntry, index: number): JSX.Element {
     return (

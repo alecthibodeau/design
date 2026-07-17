@@ -1,0 +1,12 @@
+/* Responsive Breakpoints, for reference only:
+   To work within media queries these would require a CSS preprocessor */
+/* --breakpoint-sm: 576px; */
+/* --breakpoint-md: 768px; */
+/* --breakpoint-lg: 992px; */
+/* --breakpoint-xl: 1200px; */
+/* --breakpoint-xxl: 1400px; */
+
+:root {
+  --color-ninety-five-percent-gray: #0d0d0d;
+  --color-text-link: #646cff;
+}
