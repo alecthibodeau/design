@@ -1,3 +1,6 @@
+/* Constants */
+import text from './text.ts'
+
 /* Images */
 import imageShakingHands from '../assets/images/shaking-hands.jpg';
 import imageVanFlowers from '../assets/images/van-flowers.jpg';
@@ -12,24 +15,32 @@ import imageCdSp735 from '../assets/images/cd-sp735.jpg';
 /* Interfaces */
 import GraphicDesignEntry from '../interfaces/GraphicDesignEntry';
 
-const textImageEditing: string = 'Image editing for creative agency';
-const textPhotoshop: string = 'Adobe Photoshop';
-const textVinylAlbumPackaging: string = 'Vinyl album packaging for record label';
-const textAdobePhotoshopIllustratorIndesign: string = 'Adobe Photoshop, Illustrator and InDesign';
-const textCompactDiscPackaging: string = 'Compact disc packaging for record label';
+const {
+  textCategoryPhotoshopping,
+  textCategoryBranding,
+  textCategoryPackaging,
+  textImageEditing,
+  textPhotoshop,
+  textVinylAlbumPackaging,
+  textAdobePhotoshopIllustratorIndesign,
+  textCompactDiscPackaging
+} = text;
 
 const entriesPhotoshopping: GraphicDesignEntry[] = [
   {
+    category: textCategoryPhotoshopping,
     image: imageShakingHands,
     captionOne: textImageEditing,
     captionTwo: textPhotoshop
   },
   {
+    category: textCategoryPhotoshopping,
     image: imageVanFlowers,
     captionOne: textImageEditing,
     captionTwo: textPhotoshop
   },
   {
+    category: textCategoryPhotoshopping,
     image: imageMetalEffect,
     captionOne: textImageEditing,
     captionTwo: textPhotoshop
@@ -38,6 +49,7 @@ const entriesPhotoshopping: GraphicDesignEntry[] = [
 
 const entriesBranding: GraphicDesignEntry[] = [
   {
+    category: textCategoryBranding,
     image: imageBurnsideMusic,
     captionOne: 'Branding for municipal park',
     captionTwo: 'Adobe Photoshop and Illustrator'
@@ -46,26 +58,31 @@ const entriesBranding: GraphicDesignEntry[] = [
 
 const entriesPackaging: GraphicDesignEntry[] = [
   {
+    category: textCategoryPackaging,
     image: imageSmartFlesh,
     captionOne: textVinylAlbumPackaging,
     captionTwo: textAdobePhotoshopIllustratorIndesign
   },
   {
+    category: textCategoryPackaging,
     image: imageLpSp866,
     captionOne: textVinylAlbumPackaging,
     captionTwo: textAdobePhotoshopIllustratorIndesign
   },
   {
+    category: textCategoryPackaging,
     image: imageLpSp735,
     captionOne: textVinylAlbumPackaging,
     captionTwo: textAdobePhotoshopIllustratorIndesign
   },
   {
+    category: textCategoryPackaging,
     image: imageCdSp866,
     captionOne: textCompactDiscPackaging,
     captionTwo: 'Adobe Illustrator and InDesign'
   },
   {
+    category: textCategoryPackaging,
     image: imageCdSp735,
     captionOne: textCompactDiscPackaging,
     captionTwo: 'Adobe Photoshop and InDesign'

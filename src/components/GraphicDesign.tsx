@@ -1,19 +1,32 @@
-/* Constants */
-import graphicDesignEntries from '../constants/graphic-design-entries';
-
 /* Interfaces */
 import GraphicDesignEntry from '../interfaces/GraphicDesignEntry';
+
+/* Constants */
+import graphicDesignEntries from '../constants/graphic-design-entries';
+import text from '../constants/text.ts';
+
+/* Helpers */
+import formatText from '../helpers/format-text';
 
 /* Styles */
 import '../styles/graphic-design.css';
 
+
 function GraphicDesign(): JSX.Element {
+  const {
+    textCategoryPhotoshopping,
+    textCategoryBranding,
+    textCategoryPackaging
+  } = text;
+
+  const { formatTitleCase } = formatText;
+
   function renderImage(entry: GraphicDesignEntry, index: number): JSX.Element {
     return (
       <div key={`graphicDesign${index + 1}`}>
         <img
           className="entry-image"
-          alt={`graphic design sample #${index + 1}`}
+          alt={`graphic design ${entry.category} sample #${index + 1}`}
           src={entry.image}
         />
         <div className="caption-one">{entry.captionOne}</div>
@@ -30,22 +43,28 @@ function GraphicDesign(): JSX.Element {
           <a href="https://www.linkedin.com/in/alecthibodeau">Alec Thibodeau</a>
         </h2>
         <nav>
-          <a href="#sectionPhotoshopping">Photoshopping</a>
-          <a href="#sectionBranding">Branding</a>
-          <a href="#sectionPackaging">Packaging</a>
+          <a href={`#section${textCategoryPhotoshopping}`}>
+            {formatTitleCase(textCategoryPhotoshopping)}
+          </a>
+          <a href={`#section${textCategoryBranding}`}>
+            {formatTitleCase(textCategoryBranding)}
+          </a>
+          <a href={`#section${textCategoryPackaging}`}>
+            {formatTitleCase(textCategoryPackaging)}
+          </a>
         </nav>
       </header>
-      <div className="graphic-design-images">
-        <section id="sectionPhotoshopping">
-          <h3>Photoshopping</h3>
+      <div className="graphic-design-entries">
+        <section id={`#section${textCategoryPhotoshopping}`} className="entry-section">
+          <h3>{formatTitleCase(textCategoryPhotoshopping)}</h3>
           {graphicDesignEntries.entriesPhotoshopping.map(renderImage)}
         </section>
-        <section id="sectionBranding">
-          <h3>Branding</h3>
+        <section id={`#section${textCategoryBranding}`} className="entry-section">
+          <h3>{formatTitleCase(textCategoryBranding)}</h3>
           {graphicDesignEntries.entriesBranding.map(renderImage)}
         </section>
-        <section id="sectionPackaging">
-          <h3>Packaging</h3>
+        <section id={`#section${textCategoryPackaging}`} className="entry-section">
+          <h3>{formatTitleCase(textCategoryPackaging)}</h3>
           {graphicDesignEntries.entriesPackaging.map(renderImage)}
         </section>
       </div>

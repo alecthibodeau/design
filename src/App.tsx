@@ -5,9 +5,14 @@ import GraphicDesign from './components/GraphicDesign'
 
 function App() {
   const isAvailable: boolean = true;
+
   return (
     <>
-      {isAvailable ? <GraphicDesign /> : <div>Nothing to see here</div>}
+      {
+        isAvailable ?
+        <GraphicDesign /> :
+        <div>Nothing to see here</div>
+      }
     </>
   )
 }
