@@ -27,7 +27,11 @@ function Header(): React.JSX.Element {
   function renderAnchor(category: string): JSX.Element {
     const categoryTitlecase: string = formatTitleCase(category);
     return (
-      <a key={`anchor${categoryTitlecase}`} href={`#section${categoryTitlecase}`}>
+      <a
+        key={`anchor${categoryTitlecase}`}
+        className="nav-anchor"
+        href={`#section${categoryTitlecase}`}
+      >
         {categoryTitlecase}
       </a>
     );

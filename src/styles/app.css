@@ -10,15 +10,14 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  margin: 0;
+}
+
 .app {
   padding-top: 1rem;
   font-family: 'Varela', sans-serif;
   color: var(--color-ninety-five-percent-gray);
-}
-
-a {
-  color: var(--color-text-link);
-  text-decoration: inherit;
 }
 
 h1 {
