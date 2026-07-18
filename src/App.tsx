@@ -1,6 +1,6 @@
 /* Components */
+import Entries from './components/Entries'
 import Footer from './components/Footer';
-import GraphicDesignEntries from './components/GraphicDesignEntries'
 import Header from './components/Header';
 
 /* Styles */
@@ -15,7 +15,7 @@ function App() {
         isAvailable ?
         <div className="app">
           <Header />
-          <GraphicDesignEntries />
+          <Entries />
           <Footer />
         </div> :
         <div>Nothing to see here</div>

@@ -23,13 +23,13 @@ function Header(): React.JSX.Element {
         <a href="https://www.linkedin.com/in/alecthibodeau">Alec Thibodeau</a>
       </h2>
       <nav>
-        <a href={`#section${textCategoryPhotoshopping}`}>
+        <a href={`#section${formatTitleCase(textCategoryPhotoshopping)}`}>
           {formatTitleCase(textCategoryPhotoshopping)}
         </a>
-        <a href={`#section${textCategoryBranding}`}>
+        <a href={`#section${formatTitleCase(textCategoryBranding)}`}>
           {formatTitleCase(textCategoryBranding)}
         </a>
-        <a href={`#section${textCategoryPackaging}`}>
+        <a href={`#section${formatTitleCase(textCategoryPackaging)}`}>
           {formatTitleCase(textCategoryPackaging)}
         </a>
       </nav>
