@@ -48,7 +48,9 @@ function Entries(): JSX.Element {
         className="entry-section"
       >
         <h3>
-          {formatTitleCase(category)}
+          <div>
+            {formatTitleCase(category)}
+          </div>
         </h3>
         {
           section.entries.map(

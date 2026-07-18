@@ -24,6 +24,7 @@ a {
 
 @media (min-width: 576px) {
   nav {
-    gap: 2rem;
+    gap: 3rem;
+    font-size: 1.25rem;
   }
 }
