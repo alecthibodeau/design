@@ -3,6 +3,7 @@ interface GraphicDesignEntry {
   image: string;
   captionOne: string;
   captionTwo: string;
+  imageBorder?: boolean;
 }
 
 export default GraphicDesignEntry;

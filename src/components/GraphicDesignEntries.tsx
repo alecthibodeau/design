@@ -25,7 +25,7 @@ function GraphicDesignEntries(): JSX.Element {
     return (
       <div key={`graphicDesign${index + 1}`} className="graphic-design-entry">
         <img
-          className="entry-image"
+          className={`entry-image${entry.imageBorder ? ' border' : ''}`}
           alt={`graphic design ${entry.category} sample #${index + 1}`}
           src={entry.image}
         />
@@ -38,21 +38,21 @@ function GraphicDesignEntries(): JSX.Element {
   return (
     <div className="graphic-design-entries">
       <section
-        id={`#section${textCategoryPhotoshopping}`}
+        id={`section${textCategoryPhotoshopping}`}
         className="entry-section"
       >
         <h3>{formatTitleCase(textCategoryPhotoshopping)}</h3>
         {graphicDesignEntries.entriesPhotoshopping.map(renderImage)}
       </section>
       <section
-        id={`#section${textCategoryBranding}`}
+        id={`section${textCategoryBranding}`}
         className="entry-section"
       >
         <h3>{formatTitleCase(textCategoryBranding)}</h3>
         {graphicDesignEntries.entriesBranding.map(renderImage)}
       </section>
       <section
-        id={`#section${textCategoryPackaging}`}
+        id={`section${textCategoryPackaging}`}
         className="entry-section"
       >
         <h3>{formatTitleCase(textCategoryPackaging)}</h3>

@@ -6,6 +6,7 @@ import imageShakingHands from '../assets/images/shaking-hands.jpg';
 import imageVanFlowers from '../assets/images/van-flowers.jpg';
 import imageMetalEffect from '../assets/images/metal-effect.jpg';
 import imageBurnsideMusic from '../assets/images/burnside-music.jpg';
+import imageWhiteElectric from '../assets/images/white-electric.jpg';
 import imageSmartFlesh from '../assets/images/lp-smart-flesh.jpg';
 import imageLpSp866 from '../assets/images/lp-sp866.jpg';
 import imageLpSp735 from '../assets/images/lp-sp735.jpg';
@@ -53,6 +54,13 @@ const entriesBranding: GraphicDesignEntry[] = [
     image: imageBurnsideMusic,
     captionOne: 'Branding for municipal park',
     captionTwo: 'Adobe Photoshop and Illustrator'
+  },
+  {
+    category: textCategoryBranding,
+    image: imageWhiteElectric,
+    captionOne: 'Branding for coffee shop',
+    captionTwo: 'Adobe Photoshop',
+    imageBorder: true
   }
 ];
 

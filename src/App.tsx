@@ -1,4 +1,5 @@
 /* Components */
+import Footer from './components/Footer';
 import GraphicDesignEntries from './components/GraphicDesignEntries'
 import Header from './components/Header';
 
@@ -15,6 +16,7 @@ function App() {
         <div className="app">
           <Header />
           <GraphicDesignEntries />
+          <Footer />
         </div> :
         <div>Nothing to see here</div>
       }
