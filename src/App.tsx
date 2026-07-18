@@ -1,7 +1,9 @@
-import './App.css'
-
 /* Components */
-import GraphicDesign from './components/GraphicDesign'
+import GraphicDesignEntries from './components/GraphicDesignEntries'
+import Header from './components/Header';
+
+/* Styles */
+import './styles/app.css'
 
 function App() {
   const isAvailable: boolean = true;
@@ -10,7 +12,10 @@ function App() {
     <>
       {
         isAvailable ?
-        <GraphicDesign /> :
+        <div className="app">
+          <Header />
+          <GraphicDesignEntries />
+        </div> :
         <div>Nothing to see here</div>
       }
     </>

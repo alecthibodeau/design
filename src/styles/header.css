@@ -1,0 +1,15 @@
+nav {
+  display: flex;
+  justify-content: center;
+  gap: .5rem;
+  padding-block: 1rem;
+  font-size: 1rem;
+}
+
+/* Breakpoint Small */
+
+@media (min-width: 576px) {
+  nav {
+    gap: 2rem;
+  }
+}
