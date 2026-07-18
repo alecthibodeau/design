@@ -16,23 +16,28 @@ function Header(): React.JSX.Element {
 
   const { formatTitleCase } = formatText;
 
+  const urlCentralSite: string = 'https://www.linkedin.com/in/alecthibodeau';
+
+  const categories: string[] = [
+    textCategoryPhotoshopping,
+    textCategoryBranding,
+    textCategoryPackaging
+  ];
+
+  function renderAnchor(category: string): JSX.Element {
+    const categoryTitlecase: string = formatTitleCase(category);
+    return (
+      <a key={`anchor${categoryTitlecase}`} href={`#section${categoryTitlecase}`}>
+        {categoryTitlecase}
+      </a>
+    );
+  }
+
   return (
     <header>
       <h1>Graphic Design</h1>
-      <h2>
-        <a href="https://www.linkedin.com/in/alecthibodeau">Alec Thibodeau</a>
-      </h2>
-      <nav>
-        <a href={`#section${formatTitleCase(textCategoryPhotoshopping)}`}>
-          {formatTitleCase(textCategoryPhotoshopping)}
-        </a>
-        <a href={`#section${formatTitleCase(textCategoryBranding)}`}>
-          {formatTitleCase(textCategoryBranding)}
-        </a>
-        <a href={`#section${formatTitleCase(textCategoryPackaging)}`}>
-          {formatTitleCase(textCategoryPackaging)}
-        </a>
-      </nav>
+      <h2><a href={urlCentralSite}>Alec Thibodeau</a></h2>
+      <nav>{categories.map(renderAnchor)}</nav>
     </header>
   );
 }
