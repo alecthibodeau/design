@@ -9,6 +9,7 @@
 .entry-section {
   width: 100%;
   border-top: 2px solid green;
+  scroll-margin-top: 70px;
 }
 
 .entry-section h3 {
