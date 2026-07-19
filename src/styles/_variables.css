@@ -9,5 +9,9 @@
 :root {
   --color-ninety-five-percent-gray: #0d0d0d;
   --color-white: #fff;
-  --color-blue-medium: #4000ff;
+  --color-blue-medium: #2470ff;
+  --color-green-medium: #52aa6d;
+  --color-orange-medium: #fc9746;
+  --color-red-medium: #f53a40;
+  --color-blue-green-medium: #35af9f;
 }

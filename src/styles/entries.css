@@ -8,8 +8,21 @@
 
 .entry-section {
   width: 100%;
-  border-top: 2px solid green;
   scroll-margin-top: 70px;
+  border-top-width: 2px;
+  border-top-style: solid;
+
+  &.photoshopping {
+    border-top-color: var(--color-orange-medium);
+  }
+
+  &.branding {
+    border-top-color: var(--color-red-medium);
+  }
+
+  &.packaging {
+    border-top-color: var(--color-blue-green-medium);
+  }
 }
 
 .entry-section h3 {

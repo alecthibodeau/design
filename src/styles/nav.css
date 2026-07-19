@@ -8,7 +8,7 @@ nav {
   justify-content: center;
   gap: .75rem;
   padding-block: 1rem;
-  margin-block: 1rem;
+  margin-block: 1rem 1.5rem;
   font-size: 1rem;
   background-color: var(--color-ninety-five-percent-gray);
   color: var(--color-white);
