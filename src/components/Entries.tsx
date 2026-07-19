@@ -22,7 +22,7 @@ function Entries(): JSX.Element {
     return (
       <div
         key={`graphicDesign${formatTitleCase(category)}${entryIndex}`}
-        className="graphic-design-entry"
+        className="entry"
       >
         <img
           className={`entry-image${entry.isImageBorder ? ' border' : ''}`}
@@ -33,7 +33,7 @@ function Entries(): JSX.Element {
           {entry.captionOne}
         </div>
         <div>
-          {'Tools: ' + entry.captionTwo}
+          {'Skills: ' + entry.captionTwo}
         </div>
       </div>
     );
@@ -62,7 +62,7 @@ function Entries(): JSX.Element {
   }
 
   return (
-    <div className="graphic-design-entries">
+    <div className="entries">
       {sections.map(renderSection)}
     </div>
   );

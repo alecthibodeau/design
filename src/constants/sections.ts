@@ -22,9 +22,11 @@ const {
   textCategoryBranding,
   textCategoryPackaging,
   textImageEditing,
-  textPhotoshop,
+  textHandIllustration,
+  textAdobePhotoshop,
+  textAdobeIllustrator,
+  textAdobeInDesign,
   textVinylAlbumPackaging,
-  textAdobePhotoshopIllustratorIndesign,
   textCompactDiscPackaging
 } = text;
 
@@ -32,17 +34,17 @@ const entriesPhotoshopping: Entry[] = [
   {
     image: imageShakingHands,
     captionOne: textImageEditing,
-    captionTwo: textPhotoshop
+    captionTwo: textAdobePhotoshop
   },
   {
     image: imageVanFlowers,
     captionOne: textImageEditing,
-    captionTwo: textPhotoshop
+    captionTwo: textAdobePhotoshop
   },
   {
     image: imageMetalEffect,
     captionOne: textImageEditing,
-    captionTwo: textPhotoshop
+    captionTwo: textAdobePhotoshop
   }
 ];
 
@@ -50,12 +52,12 @@ const entriesBranding: Entry[] = [
   {
     image: imageBurnsideMusic,
     captionOne: 'Branding for municipal park',
-    captionTwo: 'Adobe Photoshop and Illustrator'
+    captionTwo: `${textAdobePhotoshop}, ${textAdobeIllustrator} and ${textHandIllustration}`
   },
   {
     image: imageWhiteElectric,
     captionOne: 'Branding for coffee shop',
-    captionTwo: 'Adobe Photoshop',
+    captionTwo: `${textAdobePhotoshop} and ${textHandIllustration}`,
     isImageBorder: true
   }
 ];
@@ -64,27 +66,27 @@ const entriesPackaging: Entry[] = [
   {
     image: imageSmartFlesh,
     captionOne: textVinylAlbumPackaging,
-    captionTwo: textAdobePhotoshopIllustratorIndesign
+    captionTwo: `${textAdobePhotoshop}, ${textAdobeIllustrator}, ${textAdobeInDesign} and ${textHandIllustration}`
   },
   {
     image: imageLpSp866,
     captionOne: textVinylAlbumPackaging,
-    captionTwo: textAdobePhotoshopIllustratorIndesign
+    captionTwo: `${textAdobePhotoshop}, ${textAdobeIllustrator}, ${textAdobeInDesign} and ${textHandIllustration}`
   },
   {
     image: imageLpSp735,
     captionOne: textVinylAlbumPackaging,
-    captionTwo: textAdobePhotoshopIllustratorIndesign
+    captionTwo: `${textAdobePhotoshop}, ${textAdobeIllustrator}, ${textAdobeInDesign} and ${textHandIllustration}`
   },
   {
     image: imageCdSp866,
     captionOne: textCompactDiscPackaging,
-    captionTwo: 'Adobe Illustrator and InDesign'
+    captionTwo: `${textAdobeIllustrator} and ${textAdobeInDesign}`
   },
   {
     image: imageCdSp735,
     captionOne: textCompactDiscPackaging,
-    captionTwo: 'Adobe Photoshop and InDesign'
+    captionTwo: `${textAdobePhotoshop}, ${textAdobeInDesign} and ${textHandIllustration}`
   }
 ];
 
