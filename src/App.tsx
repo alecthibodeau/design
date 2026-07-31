@@ -13,9 +13,12 @@ import './styles/app.css'
 function App() {
   const [scrollPosition, setScrollPosition] = useState<number>(0);
   const isAvailable: boolean = true;
+  const scrolledPixelsTarget: number = 123;
 
   useEffect(() => {
-    const handleScroll = () => setScrollPosition(window.scrollY);
+    function handleScroll(): void {
+      setScrollPosition(window.scrollY);
+    }
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -29,7 +32,11 @@ function App() {
           <Nav />
           <Entries />
           <Footer />
-          {scrollPosition > 150 ? <FloatingActionButton /> : null}
+          {
+            scrollPosition > scrolledPixelsTarget ?
+            <FloatingActionButton /> :
+            null
+          }
         </div> :
         <div>Nothing to see here</div>
       }
@@ -37,4 +44,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
