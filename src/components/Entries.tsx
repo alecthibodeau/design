@@ -44,7 +44,7 @@ function Entries(): JSX.Element {
     return (
       <section
         key={`section${formatTitleCase(category)}${sectionIndex}`}
-        id={`section${formatTitleCase(category)}`}
+        id={category}
         className={`entry-section ${category}`}
       >
         <h3>

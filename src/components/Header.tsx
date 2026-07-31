@@ -1,3 +1,6 @@
+/* Styles */
+import '../styles/header.css';
+
 function Header(): React.JSX.Element {
   const urlCentralSite: string = 'https://www.linkedin.com/in/alecthibodeau';
 

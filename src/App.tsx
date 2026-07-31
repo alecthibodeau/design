@@ -2,13 +2,13 @@ import { useState, useEffect } from 'react';
 
 /* Components */
 import Entries from './components/Entries'
-import FloatingActionButton from './components/FloatingActionButton';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Nav from './components/Nav';
 
 /* Styles */
 import './styles/app.css'
+import './styles/floating-action-button.css'
 
 function App() {
   const [scrollPosition, setScrollPosition] = useState<number>(0);
@@ -34,7 +34,7 @@ function App() {
           <Footer />
           {
             scrollPosition > scrolledPixelsTarget ?
-            <FloatingActionButton /> :
+            <a href="#top" className="floating-action-button">Top</a> :
             null
           }
         </div> :

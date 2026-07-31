@@ -14,13 +14,10 @@ nav {
   color: var(--color-white);
 }
 
-a {
+nav a {
+  cursor: default;
   text-decoration: inherit;
-  color: var(--color-blue-medium);
-
-  &.nav-anchor {
-    color: var(--color-white);
-  }
+  color: var(--color-white);
 }
 
 /* Breakpoint Small */

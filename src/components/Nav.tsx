@@ -27,8 +27,7 @@ function Nav(): React.JSX.Element {
     return (
       <a
         key={`anchor${categoryTitlecase}`}
-        className="nav-anchor"
-        href={`#section${categoryTitlecase}`}
+        href={`#${category}`}
       >
         {categoryTitlecase}
       </a>

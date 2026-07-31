@@ -1,0 +1,4 @@
+header a {
+  text-decoration: inherit;
+  color: var(--color-blue-medium);
+}
