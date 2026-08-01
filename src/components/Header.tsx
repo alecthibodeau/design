@@ -8,7 +8,12 @@ function Header(): React.JSX.Element {
     <header>
       <h1>Graphic Design</h1>
       <h2>
-        <a href={urlCentralSite} target="_blank" rel="noreferrer">
+        <a
+          className="name-link"
+          href={urlCentralSite}
+          target="_blank"
+          rel="noreferrer"
+        >
           Alec Thibodeau
         </a>
       </h2>

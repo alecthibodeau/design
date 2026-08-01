@@ -25,15 +25,13 @@ function Entries(): JSX.Element {
         className="entry"
       >
         <img
-          className={`entry-image${entry.isImageBorder ? ' border' : ''}`}
+          className={`entry-image${entry.hasImageBorder ? ' has-image-border' : ''}`}
           alt={`graphic design ${formatTitleCase(category)} sample #${entryIndex + 1}`}
           src={entry.image}
         />
-        <div className="caption-one">
-          {entry.captionOne}
-        </div>
-        <div>
-          {'Skills: ' + entry.captionTwo}
+        <div className="entry-captions">
+          <div>{entry.captionOne}</div>
+          <div>{'Skills: ' + entry.captionTwo}</div>
         </div>
       </div>
     );

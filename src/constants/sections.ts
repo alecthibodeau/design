@@ -58,7 +58,7 @@ const entriesBranding: Entry[] = [
     image: imageWhiteElectric,
     captionOne: 'Branding for coffee shop',
     captionTwo: `${textAdobePhotoshop} and ${textHandIllustration}`,
-    isImageBorder: true
+    hasImageBorder: true
   }
 ];
 

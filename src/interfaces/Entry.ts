@@ -2,7 +2,7 @@ interface Entry {
   image: string;
   captionOne: string;
   captionTwo: string;
-  isImageBorder?: boolean;
+  hasImageBorder?: boolean;
 }
 
 export default Entry;
