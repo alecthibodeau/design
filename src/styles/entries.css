@@ -8,7 +8,7 @@
 
 .entry-section {
   width: 100%;
-  scroll-margin-top: 70px;
+  scroll-margin-top: 60px;
   border-top-width: 2px;
   border-top-style: solid;
 
@@ -42,3 +42,11 @@
   padding-inline: 1rem;
 }
 
+/* Breakpoint Small */
+
+@media (min-width: 576px) {
+
+  .entry-section {
+    scroll-margin-top: 70px;
+  }
+}

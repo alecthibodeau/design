@@ -14,7 +14,7 @@ nav {
 
 nav a {
   padding: .5rem;
-  border: 1px solid var(--color-white);
+  border: 1px solid transparent;
   border-radius: .5rem;
   font-size: .875rem;
   cursor: default;
@@ -22,6 +22,7 @@ nav a {
   color: var(--color-white);
 
   &:hover {
+    border-color: var(--color-white);
     background-color: var(--color-white);
     color: var(--color-ninety-five-percent-gray);
   }
