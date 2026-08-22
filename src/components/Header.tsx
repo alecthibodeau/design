@@ -6,7 +6,7 @@ function Header(): React.JSX.Element {
 
   return (
     <header>
-      <h1>Graphic Design</h1>
+      <h1>Design</h1>
       <h2>
         <a
           className="name-link"
