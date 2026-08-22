@@ -1,3 +1,3 @@
-# Graphic Design
+# Design
 
-This is the portfolio for my work in graphic design.
+This is the portfolio for my work in design.
