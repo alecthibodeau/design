@@ -3,7 +3,6 @@ import text from './text.ts'
 
 /* Images */
 import imageShakingHands from '../assets/images/shaking-hands.jpg';
-import imageVanFlowers from '../assets/images/van-flowers.jpg';
 import imageMetalEffect from '../assets/images/metal-effect.jpg';
 import imageBurnsideMusic from '../assets/images/burnside-music.jpg';
 import imageWhiteElectric from '../assets/images/white-electric.jpg';
@@ -33,11 +32,6 @@ const {
 const entriesPhotoshopping: Entry[] = [
   {
     image: imageShakingHands,
-    captionOne: textImageEditing,
-    captionTwo: textAdobePhotoshop
-  },
-  {
-    image: imageVanFlowers,
     captionOne: textImageEditing,
     captionTwo: textAdobePhotoshop
   },
