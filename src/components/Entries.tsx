@@ -21,12 +21,12 @@ function Entries(): JSX.Element {
   ): JSX.Element {
     return (
       <div
-        key={`graphicDesign${formatTitleCase(category)}${entryIndex}`}
+        key={`design${formatTitleCase(category)}${entryIndex}`}
         className="entry"
       >
         <img
           className={`entry-image${entry.hasImageBorder ? ' has-image-border' : ''}`}
-          alt={`graphic design ${formatTitleCase(category)} sample #${entryIndex + 1}`}
+          alt={`design for ${formatTitleCase(category)} sample #${entryIndex + 1}`}
           src={entry.image}
         />
         <div className="entry-captions">
