@@ -9,7 +9,7 @@
 .entry-section {
   width: 100%;
   scroll-margin-top: 60px;
-  border-top-width: 2px;
+  border-top-width: 3px;
   border-top-style: solid;
 
   &.photoshopping {
