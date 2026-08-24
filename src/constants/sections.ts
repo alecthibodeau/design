@@ -60,17 +60,20 @@ const entriesPackaging: Entry[] = [
   {
     image: imageSmartFlesh,
     captionOne: textVinylAlbumPackaging,
-    captionTwo: `${textAdobePhotoshop}, ${textAdobeIllustrator}, ${textAdobeInDesign} and ${textHandIllustration}`
+    captionTwo: `${textAdobePhotoshop}, ${textAdobeIllustrator}, ${textAdobeInDesign} and ${textHandIllustration}`,
+    hasImageBorder: true
   },
   {
     image: imageLpSp866,
     captionOne: textVinylAlbumPackaging,
-    captionTwo: `${textAdobePhotoshop}, ${textAdobeIllustrator}, ${textAdobeInDesign} and ${textHandIllustration}`
+    captionTwo: `${textAdobePhotoshop}, ${textAdobeIllustrator}, ${textAdobeInDesign} and ${textHandIllustration}`,
+    hasImageBorder: true
   },
   {
     image: imageLpSp735,
     captionOne: textVinylAlbumPackaging,
-    captionTwo: `${textAdobePhotoshop}, ${textAdobeIllustrator}, ${textAdobeInDesign} and ${textHandIllustration}`
+    captionTwo: `${textAdobePhotoshop}, ${textAdobeIllustrator}, ${textAdobeInDesign} and ${textHandIllustration}`,
+    hasImageBorder: true
   },
   {
     image: imageCdSp866,
