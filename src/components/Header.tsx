@@ -11,8 +11,6 @@ function Header(): React.JSX.Element {
         <a
           className="name-link"
           href={urlCentralSite}
-          target="_blank"
-          rel="noreferrer"
         >
           Alec Thibodeau
         </a>
