@@ -26,7 +26,7 @@ function Entries(): JSX.Element {
       >
         <img
           className={`entry-image${entry.hasImageBorder ? ' has-image-border' : ''}`}
-          alt={`design for ${formatTitleCase(category)} sample #${entryIndex + 1}`}
+          alt={`${formatTitleCase(category)} entry #${entryIndex + 1}: ${entry.description}`}
           src={entry.image}
         />
         <div className="entry-captions">

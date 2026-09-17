@@ -1,5 +1,8 @@
+/* Interfaces */
+import Section from '../interfaces/Section.ts';
+
 /* Constants */
-import text from '../constants/text.ts';
+import sections from '../constants/sections.ts';
 
 /* Helpers */
 import formatText from '../helpers/format-text';
@@ -8,26 +11,14 @@ import formatText from '../helpers/format-text';
 import '../styles/nav.css';
 
 function Nav(): React.JSX.Element {
-  const {
-    textCategoryPhotoshopping,
-    textCategoryBranding,
-    textCategoryPackaging
-  } = text;
-
   const { formatTitleCase } = formatText;
 
-  const categories: string[] = [
-    textCategoryPhotoshopping,
-    textCategoryBranding,
-    textCategoryPackaging
-  ];
-
-  function renderAnchor(category: string): JSX.Element {
-    const categoryTitlecase: string = formatTitleCase(category);
+  function renderAnchor(section: Section): JSX.Element {
+    const categoryTitlecase: string = formatTitleCase(section.category);
     return (
       <a
         key={`anchor${categoryTitlecase}`}
-        href={`#${category}`}
+        href={`#${section.category}`}
       >
         {categoryTitlecase}
       </a>
@@ -35,7 +26,7 @@ function Nav(): React.JSX.Element {
   }
 
   return (
-    <nav>{categories.map(renderAnchor)}</nav>
+    <nav>{sections.map(renderAnchor)}</nav>
   );
 }
 

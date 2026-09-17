@@ -2,15 +2,18 @@
 import text from './text.ts'
 
 /* Images */
-import imageShakingHands from '../assets/images/shaking-hands.jpg';
-import imageMetalEffect from '../assets/images/metal-effect.jpg';
-import imageBurnsideMusic from '../assets/images/burnside-music.jpg';
-import imageWhiteElectric from '../assets/images/white-electric.jpg';
-import imageSmartFlesh from '../assets/images/lp-smart-flesh.jpg';
-import imageLpSp866 from '../assets/images/lp-sp866.jpg';
-import imageLpSp735 from '../assets/images/lp-sp735.jpg';
-import imageCdSp866 from '../assets/images/cd-sp866.jpg';
-import imageCdSp735 from '../assets/images/cd-sp735.jpg';
+import imageCachalot from '../assets/images/alec-thibodeau-cachalot.jpg';
+import imageCdSp866 from '../assets/images/alec-thibodeau-cd-sp866.jpg';
+import imageCdSp735 from '../assets/images/alec-thibodeau-cd-sp735.jpg';
+import imageDeadInDesemboque from '../assets/images/alec-thibodeau-dead-in-desemboque.jpg';
+import imageEpochTravelersOne from '../assets/images/alec-thibodeau-epoch-travelers-one.jpg';
+import imageEpochTravelersTwo from '../assets/images/alec-thibodeau-epoch-travelers-two.jpg';
+import imageFromTheCurb from '../assets/images/alec-thibodeau-from-the-curb.jpg';
+import imageLoveWins from '../assets/images/alec-thibodeau-love-wins.jpg';
+import imageLpSp735 from '../assets/images/alec-thibodeau-lp-sp735.jpg';
+import imageLpSp866 from '../assets/images/alec-thibodeau-lp-sp866.jpg';
+import imageSmartFlesh from '../assets/images/alec-thibodeau-lp-smart-flesh.jpg';
+import imageWhiteElectric from '../assets/images/alec-thibodeau-white-electric.jpg';
 
 /* Interfaces */
 import Entry  from '../interfaces/Entry.ts';
@@ -20,6 +23,7 @@ const {
   textCategoryPhotoshopping,
   textCategoryBranding,
   textCategoryPackaging,
+  textEpochTravelers,
   textImageEditing,
   textHandIllustration,
   textAdobePhotoshop,
@@ -29,76 +33,104 @@ const {
   textCompactDiscPackaging
 } = text;
 
-const entriesPhotoshopping: Entry[] = [
-  {
-    image: imageShakingHands,
-    captionOne: textImageEditing,
-    captionTwo: textAdobePhotoshop
-  },
-  {
-    image: imageMetalEffect,
-    captionOne: textImageEditing,
-    captionTwo: textAdobePhotoshop
-  }
-];
-
 const entriesBranding: Entry[] = [
   {
-    image: imageBurnsideMusic,
-    captionOne: 'Branding for municipal park',
-    captionTwo: `${textAdobePhotoshop}, ${textAdobeIllustrator} and ${textHandIllustration}`
-  },
-  {
     image: imageWhiteElectric,
-    captionOne: 'Branding for coffee shop',
+    description: 'White Electric',
+    captionOne: 'Poster for worker-owned cooperative cafe',
     captionTwo: `${textAdobePhotoshop} and ${textHandIllustration}`,
     hasImageBorder: true
+  },
+  {
+    image: imageFromTheCurb,
+    description: 'From the Curb',
+    captionOne: 'Logo for gallery exhibition',
+    captionTwo: `${textAdobePhotoshop}`
   }
 ];
 
 const entriesPackaging: Entry[] = [
   {
     image: imageSmartFlesh,
+    description: 'Low Anthem - Smart Flesh',
     captionOne: textVinylAlbumPackaging,
     captionTwo: `${textAdobePhotoshop}, ${textAdobeIllustrator}, ${textAdobeInDesign} and ${textHandIllustration}`,
     hasImageBorder: true
   },
   {
     image: imageLpSp866,
+    description: 'Death Vessel - Island Intervals',
     captionOne: textVinylAlbumPackaging,
     captionTwo: `${textAdobePhotoshop}, ${textAdobeIllustrator}, ${textAdobeInDesign} and ${textHandIllustration}`,
     hasImageBorder: true
   },
   {
     image: imageLpSp735,
+    description: 'Death Vessel - Nothing is Precious Enough for Us',
     captionOne: textVinylAlbumPackaging,
     captionTwo: `${textAdobePhotoshop}, ${textAdobeIllustrator}, ${textAdobeInDesign} and ${textHandIllustration}`,
     hasImageBorder: true
   },
   {
     image: imageCdSp866,
+    description: 'Death Vessel - Island Intervals',
     captionOne: textCompactDiscPackaging,
     captionTwo: `${textAdobeIllustrator} and ${textAdobeInDesign}`
   },
   {
     image: imageCdSp735,
+    description: 'Death Vessel - Nothing is Precious Enough for Us',
     captionOne: textCompactDiscPackaging,
     captionTwo: `${textAdobePhotoshop}, ${textAdobeInDesign} and ${textHandIllustration}`
+  },
+  {
+    image: imageCachalot,
+    description: 'Cachalot postcard',
+    captionOne: 'Postcard for online shop',
+    captionTwo: `${textAdobeIllustrator}`
+  },
+  {
+    image: imageLoveWins,
+    description: 'Love Wins postcard',
+    captionOne: 'Postcard for online shop',
+    captionTwo: `${textAdobeIllustrator}`
+  },
+  {
+    image: imageDeadInDesemboque,
+    description: 'Dead in Desemboque graphic novel cover illustration',
+    captionOne: 'Graphic novel cover for book publisher',
+    captionTwo: `${textAdobePhotoshop}, plus ${textHandIllustration} by multiple artists`,
+    hasImageBorder: true
+  }
+];
+
+const entriesPhotoshopping: Entry[] = [
+  {
+    image: imageEpochTravelersOne,
+    description: textEpochTravelers,
+    captionOne: textImageEditing,
+    captionTwo: textAdobePhotoshop
+  },
+  {
+    image: imageEpochTravelersTwo,
+    description: textEpochTravelers,
+    captionOne: textImageEditing,
+    captionTwo: textAdobePhotoshop
   }
 ];
 
 const sections: Section[] = [
   {
-    category: textCategoryPhotoshopping,
-    entries: entriesPhotoshopping
+    category: textCategoryPackaging,
+    entries: entriesPackaging
   },
   {
     category: textCategoryBranding,
     entries: entriesBranding
   },
-    {
-    category: textCategoryPackaging,
-    entries: entriesPackaging
+  {
+    category: textCategoryPhotoshopping,
+    entries: entriesPhotoshopping
   }
 ];
 
